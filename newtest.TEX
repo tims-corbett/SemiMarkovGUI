@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage[x11names, rgb]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{snakes,arrows,shapes}
+\usepackage{amsmath}
+%
+%
+
+%
+
+%
+
+\begin{document}
+\pagestyle{empty}
+%
+%
+%
+
+\enlargethispage{100cm}
+% Start of code
+\begin{tikzpicture}[>=latex',line join=bevel,]
+%%
+\node (1) at (112bp,66bp) [draw,circle] {$\begin{matrix}\text{Flaw}\\\text{F}\end{matrix}$};
+  \node (0) at (18bp,42bp) [draw,circle] {$\begin{matrix}\text{Success}\\\text{S}\end{matrix}$};
+  \node (3) at (300bp,51bp) [draw,circle] {$\begin{matrix}\text{Rupture}\\\text{R}\end{matrix}$};
+  \node (2) at (206bp,18bp) [draw,circle] {$\begin{matrix}\text{Leak}\\\text{L}\end{matrix}$};
+  \draw [->,ultra thick] (1) ..controls (89.04bp,48.867bp) and (78.04bp,42.117bp)  .. (67bp,39bp) .. controls (60.356bp,37.124bp) and (52.996bp,36.773bp)  .. (0);
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (65bp,46.5bp) node {$\omega$};
+  \draw [->,ultra thick] (2) ..controls (237.18bp,28.827bp) and (257.02bp,35.941bp)  .. (3);
+  \draw (253bp,41.5bp) node {$\rho_L$};
+  \draw [->,ultra thick] (2) ..controls (166.11bp,18.137bp) and (127.04bp,19.183bp)  .. (94bp,24bp) .. controls (77.58bp,26.394bp) and (59.482bp,30.688bp)  .. (0);
+  \draw (112bp,31.5bp) node {$\mu$};
+  \draw [->,ultra thick] (1) ..controls (162.55bp,62.004bp) and (232.91bp,56.33bp)  .. (3);
+  \draw (206bp,66.5bp) node {$\rho_F$};
+  \draw [->,ultra thick] (0) ..controls (43.309bp,51.851bp) and (53.566bp,55.521bp)  .. (63bp,58bp) .. controls (69.649bp,59.747bp) and (76.921bp,61.192bp)  .. (1);
+  \draw (65bp,65.5bp) node {$\phi$};
+  \draw [->,ultra thick] (1) ..controls (136.9bp,53.495bp) and (147.52bp,47.944bp)  .. (157bp,43bp) .. controls (164.61bp,39.027bp) and (172.91bp,34.704bp)  .. (2);
+  \draw (159bp,50.5bp) node {$\lambda_F$};
+%
+\end{tikzpicture}
+% End of code
+
+%
+\end{document}
+%
+
+
+
